@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>NarMahi | Professional Web Services</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <style type="text/tailwindcss">
+    :root {
+      --primary-teal: #00ffd5;
+      --deep-black: #000000;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--deep-black);
+      color: white;
+      overflow-x: hidden;
+    }
+    .font-logo {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .timeline-line {
+      width: 2px;
+      background: linear-gradient(to bottom, var(--primary-teal) 0%, var(--primary-teal) 80%, transparent 100%);
+    }
+    
+    /* Scroll Animation Classes */
+    .reveal-section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+    }
+    .reveal-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00ffd5",
+            "brand-black": "#000000",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-brand-black text-white font-display">
+
+  <nav class="fixed top-0 w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center cursor-pointer select-none">
+        <img src="logo.png" alt="NarMahi Logo" class="h-10 w-auto object-contain"/>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-10 text-sm font-semibold">
+        <a class="text-white/70 hover:text-primary transition-colors uppercase tracking-widest text-xs" href="#services">Services</a>
+        <a class="text-white/70 hover:text-primary transition-colors uppercase tracking-widest text-xs" href="#projects">Projects</a>
+        <a class="text-white/70 hover:text-primary transition-colors uppercase tracking-widest text-xs" href="#founders">Team</a>
+        
+        <a href="#contact" class="bg-primary text-brand-black px-6 py-2.5 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 font-bold uppercase text-xs tracking-wider">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="relative min-h-screen flex flex-col pt-20">
+    <div class="h-[55vh] flex items-center justify-center overflow-hidden relative">
+      <div class="relative z-10 select-none flex items-center justify-center w-full px-4 reveal-section">
+        <img src="logo.png" alt="NarMahi Main Logo" class="w-[90%] md:w-[70%] h-auto object-contain" />
+      </div>
+    </div>
+
+    <div class="h-[45vh] flex items-start justify-center px-6 -mt-10 md:-mt-0 reveal-section">
+      <div class="max-w-3xl text-center relative z-20">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Professional web services <br/> <span class="text-primary">redefined for the future.</span>
+        </h2>
+        <p class="text-xl text-white/60 mb-10 leading-relaxed font-light">
+          We design, build, and deploy high-performance digital solutions with zero hassle. Plus, we offer free maintenance so you can focus on growing your business.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-32 px-6 bg-brand-black border-t border-white/5 relative overflow-hidden reveal-section" id="services">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-20">
+        <span class="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-primary font-bold tracking-[0.2em] uppercase text-[10px] mb-4 backdrop-blur-md">
+          Capabilities
+        </span>
+        <h2 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">
+          Our Solutions
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="group relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.05]">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500 pointer-events-none"></div>
+          <div class="relative z-10 flex flex-col items-center text-center h-full">
+            <div class="w-20 h-20 rounded-full bg-brand-black border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-primary/50 transition-all duration-500">
+              <span class="material-symbols-outlined text-4xl text-white/80 group-hover:text-primary transition-colors">language</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">Website</h3>
+            <p class="text-white/50 text-sm leading-relaxed">Complete multi-page business solutions engineered for speed and SEO dominance.</p>
+          </div>
+        </div>
+        <div class="group relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.05]">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500 pointer-events-none"></div>
+          <div class="relative z-10 flex flex-col items-center text-center h-full">
+            <div class="w-20 h-20 rounded-full bg-brand-black border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-primary/50 transition-all duration-500">
+              <span class="material-symbols-outlined text-4xl text-white/80 group-hover:text-primary transition-colors">person</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">Portfolio</h3>
+            <p class="text-white/50 text-sm leading-relaxed">Aesthetically crafted personal brands for creatives who want to stand out.</p>
+          </div>
+        </div>
+        <div class="group relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.05]">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500 pointer-events-none"></div>
+          <div class="relative z-10 flex flex-col items-center text-center h-full">
+            <div class="w-20 h-20 rounded-full bg-brand-black border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-primary/50 transition-all duration-500">
+              <span class="material-symbols-outlined text-4xl text-white/80 group-hover:text-primary transition-colors">rocket_launch</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">Landing Page</h3>
+            <p class="text-white/50 text-sm leading-relaxed">High-conversion sales pages focused on a single, powerful call to action.</p>
+          </div>
+        </div>
+        <div class="group relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.05]">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500 pointer-events-none"></div>
+          <div class="relative z-10 flex flex-col items-center text-center h-full">
+            <div class="w-20 h-20 rounded-full bg-brand-black border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-primary/50 transition-all duration-500">
+              <span class="material-symbols-outlined text-4xl text-white/80 group-hover:text-primary transition-colors">settings_suggest</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">Maintenance</h3>
+            <p class="text-white/50 text-sm leading-relaxed">Zero-headache ongoing updates, security patches, and 24/7 uptime monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-6 bg-brand-black reveal-section" id="projects">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-24">
+        <span class="text-primary font-bold tracking-[0.3em] uppercase text-xs">Portfolio</span>
+        <h2 class="text-4xl md:text-5xl font-bold mt-4">Selected Works</h2>
+      </div>
+
+      <div class="relative">
+        <div class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 timeline-line opacity-10"></div>
+        <div class="space-y-32 lg:space-y-48">
+
+          <div class="relative flex flex-col lg:flex-row items-center gap-12 group">
+            <div class="lg:w-1/2 flex justify-end">
+              <div class="w-full max-w-xl aspect-video rounded-2xl overflow-hidden border border-white/10 group-hover:border-primary/50 transition-all duration-500 relative">
+                <img src="images/career-path.jpg" alt="Career Path Project" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <div class="max-w-md lg:pl-12">
+                <span class="text-primary font-bold text-xs uppercase tracking-widest">Web Application</span>
+                <h3 class="text-3xl font-bold mt-4 mb-4">Career Path</h3>
+                <p class="text-white/60 mb-6 leading-relaxed">AI powered career development platform helping users navigate professional growth with personalized insights and recommendations.</p>
+                <div class="inline-flex items-center text-white/40 font-bold uppercase text-xs tracking-widest cursor-wait">
+                  PREVIEW COMING SOON <span class="material-symbols-outlined text-sm ml-2">pending</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col lg:flex-row-reverse items-center gap-12 group">
+            <div class="lg:w-1/2 flex justify-start">
+              <div class="w-full max-w-xl aspect-video rounded-2xl overflow-hidden border border-white/10 group-hover:border-primary/50 transition-all duration-500 relative">
+                <img src="images/local-rank.jpg" alt="Local Rank Project" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-end">
+              <div class="max-w-md lg:pr-12 text-right">
+                <span class="text-primary font-bold text-xs uppercase tracking-widest">Digital Presence</span>
+                <h3 class="text-3xl font-bold mt-4 mb-4">Local Rank</h3>
+                <p class="text-white/60 mb-6 leading-relaxed">Local Business Listing portal revitalizing small business identities through hyper-local SEO and modern e-commerce experiences.</p>
+                <div class="inline-flex items-center justify-end w-full text-white/40 font-bold uppercase text-xs tracking-widest cursor-wait">
+                  <span class="material-symbols-outlined text-sm mr-2">pending</span> PREVIEW COMING SOON
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col lg:flex-row items-center gap-12 group">
+            <div class="lg:w-1/2 flex justify-end">
+              <div class="w-full max-w-xl aspect-video rounded-2xl overflow-hidden border border-white/10 group-hover:border-primary/50 transition-all duration-500 relative">
+                <img src="images/asseta.jpg" alt="Asseta Project" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <div class="max-w-md lg:pl-12">
+                <span class="text-primary font-bold text-xs uppercase tracking-widest">SaaS Solution</span>
+                <h3 class="text-3xl font-bold mt-4 mb-4">Asseta Asset Management</h3>
+                <p class="text-white/60 mb-6 leading-relaxed">Streamlined asset tracking and management system for enterprise-level inventory control.</p>
+                <a class="inline-flex items-center text-white font-bold group-hover:text-primary transition-colors uppercase text-xs tracking-widest" href="https://ishanpandya101.github.io/Asseta/" target="_blank">
+                  VISIT PROJECT <span class="material-symbols-outlined text-sm ml-2">open_in_new</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col lg:flex-row-reverse items-center gap-12 group">
+            <div class="lg:w-1/2 flex justify-start">
+              <div class="w-full max-w-xl aspect-video rounded-2xl overflow-hidden border border-white/10 group-hover:border-primary/50 transition-all duration-500 relative">
+                <img src="images/pearl-jewels.jpg" alt="Pearl Jewells Project" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-end">
+              <div class="max-w-md lg:pr-12 text-right">
+                <span class="text-primary font-bold text-xs uppercase tracking-widest">E-commerce</span>
+                <h3 class="text-3xl font-bold mt-4 mb-4">Pearl Jewells</h3>
+                <p class="text-white/60 mb-6 leading-relaxed">A luxury online jewelry store featuring high-end collections with a seamless shopping experience.</p>
+                <a class="inline-flex items-center text-white font-bold group-hover:text-primary transition-colors uppercase text-xs tracking-widest" href="https://narmahi.github.io/Pearl-jewells/" target="_blank">
+                  <span class="material-symbols-outlined text-sm mr-2">open_in_new</span> VISIT PROJECT
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-6 bg-brand-black reveal-section" id="founders">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-24">
+        <span class="text-primary font-bold tracking-[0.3em] uppercase text-xs">Leadership</span>
+        <h2 class="text-4xl md:text-5xl font-bold mt-4">The Founders</h2>
+      </div>
+      <div class="grid grid-cols-1 gap-20">
+        
+        <div class="flex flex-col md:flex-row items-center group">
+          <div class="w-64 h-64 flex-shrink-0 mb-10 md:mb-0 md:mr-16 relative">
+            <div class="absolute inset-0 border border-primary/20 rounded-full scale-105 group-hover:scale-110 transition-duration-500"></div>
+            <div class="w-full h-full rounded-full overflow-hidden border border-white/10 bg-white/5">
+              <img src="images/ishan.jpg" alt="Ishan Pandya" class="w-full h-full object-cover transition-all duration-500">
+            </div>
+          </div>
+          <div class="flex-grow text-center md:text-left">
+            <h3 class="text-4xl font-black mb-3 tracking-tight text-white">Ishan Pandya</h3>
+            <p class="text-primary font-bold text-sm uppercase tracking-[0.2em] mb-6">Lead Strategist & Architect</p>
+            <p class="text-white/50 leading-relaxed text-xl font-light italic border-l-2 border-primary/30 pl-8">"Our goal is to democratize high-end web design. No business should be held back by an outdated or overpriced digital presence."</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center group">
+          <div class="w-64 h-64 flex-shrink-0 mb-10 md:mb-0 md:ml-16 relative">
+            <div class="absolute inset-0 border border-primary/20 rounded-full scale-105 group-hover:scale-110 transition-duration-500"></div>
+            <div class="w-full h-full rounded-full overflow-hidden border border-white/10 bg-white/5">
+              <img src="images/pari.jpg" alt="Pari Soni" class="w-full h-full object-cover transition-all duration-500">
+            </div>
+          </div>
+          <div class="flex-grow text-center md:text-right">
+            <h3 class="text-4xl font-black mb-3 tracking-tight text-white">Pari Soni</h3>
+            <p class="text-primary font-bold text-sm uppercase tracking-[0.2em] mb-6">Head of Product & Design</p>
+            <p class="text-white/50 leading-relaxed text-xl font-light italic border-r-2 border-primary/30 pr-8">"We focus on the intersection of aesthetics and utility. Every pixel we place serves a purpose in telling our client's story."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <footer class="relative bg-brand-black text-white py-24 px-6 border-t border-white/5 overflow-hidden reveal-section" id="contact">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-20">
+        
+        <div class="flex flex-col justify-center">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 w-fit mb-6">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary">Available for new projects</span>
+          </div>
+
+          <h2 class="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Ready to scale? <br/>
+            <span class="text-white/40">Let's talk tech.</span>
+          </h2>
+          
+          <p class="text-white/60 text-lg leading-relaxed mb-10 max-w-md">
+            We don't just write code; we engineer digital dominance. Reach out for a consultation.
+          </p>
+
+          <div class="space-y-4">
+            <a href="tel:9301106640" class="flex items-center gap-5 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 hover:bg-white/10 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-full bg-black flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-primary">call</span>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-white/40 mb-1">Direct Line</p>
+                <p class="text-lg font-bold tracking-wide text-white group-hover:text-primary transition-colors">9301106640 / 8005672895</p>
+              </div>
+            </a>
+
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=narmahi.business@gmail.com&su=New%20Project%20Inquiry%20-%20NarMahi&body=Hi%20NarMahi%20Team,%0A%0AI%20am%20interested%20in%20your%20services.%20Please%20get%20back%20to%20me." class="flex items-center gap-5 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 hover:bg-white/10 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-full bg-black flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-primary">mail</span>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-white/40 mb-1">Business Email</p>
+                <p class="text-lg font-bold tracking-wide text-white group-hover:text-primary transition-colors">narmahi.business@gmail.com</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex gap-4 mt-10">
+            <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all">
+                <span class="text-xs font-bold">IN</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all">
+                <span class="text-xs font-bold">X</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-black transition-all">
+                <span class="text-xs font-bold">IG</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white/5 rounded-3xl p-8 border border-white/10 backdrop-blur-xl shadow-2xl relative">
+          <form class="space-y-5" id="contactForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div class="space-y-1">
+                <label class="text-[10px] uppercase tracking-widest text-white/50 font-bold ml-1">Name</label>
+                <input type="text" id="waName" placeholder="Your Name" class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-white text-sm" required />
+              </div>
+              <div class="space-y-1">
+                <label class="text-[10px] uppercase tracking-widest text-white/50 font-bold ml-1">Phone</label>
+                <input type="tel" id="waPhone" placeholder="+91..." class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-white text-sm" required />
+              </div>
+            </div>
+            <div class="space-y-1">
+              <label class="text-[10px] uppercase tracking-widest text-white/50 font-bold ml-1">Email</label>
+              <input type="email" id="waEmail" placeholder="name@company.com" class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-white text-sm" />
+            </div>
+            <div class="space-y-1">
+              <label class="text-[10px] uppercase tracking-widest text-white/50 font-bold ml-1">Service Interest</label>
+              <div class="relative">
+                <select id="waService" class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-white text-sm appearance-none cursor-pointer">
+                  <option value="Not Selected" disabled selected class="text-white/30">Select Service...</option>
+                  <optgroup label="Development" class="bg-black text-primary font-bold">
+                    <option value="Custom Website" class="bg-black text-white">Custom Website</option>
+                    <option value="SaaS Application" class="bg-black text-white">SaaS Application</option>
+                    <option value="E-Commerce" class="bg-black text-white">E-Commerce</option>
+                  </optgroup>
+                  <optgroup label="Design" class="bg-black text-primary font-bold">
+                    <option value="UI/UX Design" class="bg-black text-white">UI/UX Design</option>
+                    <option value="Brand Identity" class="bg-black text-white">Brand Identity</option>
+                  </optgroup>
+                  <optgroup label="Growth" class="bg-black text-primary font-bold">
+                    <option value="SEO & Marketing" class="bg-black text-white">SEO & Marketing</option>
+                    <option value="Maintenance" class="bg-black text-white">Maintenance</option>
+                  </optgroup>
+                </select>
+                <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none text-lg">unfold_more</span>
+              </div>
+            </div>
+            <div class="space-y-1">
+              <label class="text-[10px] uppercase tracking-widest text-white/50 font-bold ml-1">Budget (Optional)</label>
+              <select id="waBudget" class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-white text-sm appearance-none cursor-pointer">
+                <option value="Not Disclosed" disabled selected>Project Budget...</option>
+                <option value="₹20k - ₹50k" class="bg-black text-white">₹20k - ₹50k</option>
+                <option value="₹50k - ₹1 Lakh" class="bg-black text-white">₹50k - ₹1 Lakh</option>
+                <option value="₹1 Lakh - ₹5 Lakh" class="bg-black text-white">₹1 Lakh - ₹5 Lakh</option>
+                <option value="₹5 Lakh+" class="bg-black text-white">₹5 Lakh+</option>
+              </select>
+            </div>
+            <div class="space-y-1">
+              <label class="text-[10px] uppercase tracking-widest text-white/50 font-bold ml-1">Details</label>
+              <textarea id="waDetails" rows="3" placeholder="Tell us about your vision..." class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-white text-sm resize-none"></textarea>
+            </div>
+            <button type="button" onclick="sendToWhatsApp()" class="w-full bg-primary text-black font-extrabold uppercase tracking-widest py-4 rounded-lg hover:bg-white hover:scale-[1.02] transition-all duration-300 shadow-[0_0_20px_rgba(0,255,213,0.3)] flex items-center justify-center gap-2 mt-2">
+              Start Project
+              <span class="material-symbols-outlined text-lg">arrow_outward</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-white/30 text-[10px] uppercase tracking-widest">
+        <div class="flex items-center gap-3 mb-4 md:mb-0">
+          <img src="logo.png" alt="Logo" class="h-5 opacity-40 grayscale"/>
+          <p>© 2026 NarMahi Software.</p>
+        </div>
+        
+        <div class="flex gap-8 font-bold text-white/20">
+            <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+            <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".reveal-section").forEach(section => {
+        observer.observe(section);
+      });
+    });
+
+    // WhatsApp Form Submit Logic
+    function sendToWhatsApp() {
+      let name = document.getElementById('waName').value;
+      let phone = document.getElementById('waPhone').value;
+      let email = document.getElementById('waEmail').value;
+      let service = document.getElementById('waService').value;
+      let budget = document.getElementById('waBudget').value;
+      let details = document.getElementById('waDetails').value;
+
+      if(name === "" || phone === "") {
+        alert("Please enter your Name and Phone number!");
+        return;
+      }
+
+      let message = `*New Lead from NarMahi Website!*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email}%0A*Service Required:* ${service}%0A*Budget:* ${budget}%0A*Details:* ${details}`;
+      let whatsappNumber = "919301106640"; 
+      let whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
+      
+      window.open(whatsappLink, '_blank');
+    }
+  </script>
+  </body>
+</html>
