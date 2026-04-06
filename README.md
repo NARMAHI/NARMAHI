@@ -6,7 +6,7 @@ Welcome to the official repository for the **NARMAHI Agency** company website. T
 
 - **Framework:** React + Vite
 - **Styling:** Vanilla CSS (Targeting modern aesthetics)
-- **Deployment:** Netlify 
+- **Deployment:** Vercel 
 
 ## 🛠️ Running Locally
 
@@ -34,4 +34,4 @@ To run the application locally, follow these steps:
 
 ## 🌐 Deployment
 
-The site is configured to deploy via Netlify. All pushes to the `main` branch are automatically built and deployed using the configuration in `netlify.toml`.
+The site is fully ready for **Vercel** deployment (including Vercel Live). All pushes to the `main` branch can be automatically built and deployed. We've included a `vercel.json` file to ensure SPA routing works seamlessly!
