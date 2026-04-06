@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  /* Isse initially dark color aayega! */
+  background-color: #13262F; 
+  color: white;
+  margin: 0;
+  padding: 0;
+}
