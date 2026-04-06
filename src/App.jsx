@@ -6,7 +6,7 @@ import {
   X, PhoneCall, Mail, Send, User, Briefcase, MessageSquare, MessageCircle, Phone,
   Check, ShieldCheck, Shield, Target, Eye, Calendar, DollarSign, Search, Map, MapPin, PenTool, Rocket, TrendingUp, Quote, Sparkles, Play
 } from "lucide-react";
-import divinePanditImg from "./assets/images/divine-pandit-2.png";
+import divinePanditImg from "./assets/images/divine-pandit-3.png";
 import careerPathAiImg from "./assets/images/careerpath-ai.png";
 import localRankImg from "./assets/images/local-rank.png";
 import ecommerceImg from "./assets/images/ecommerce.png";
