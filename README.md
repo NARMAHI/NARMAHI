@@ -1,18 +1,37 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
 # NARMAHI
+
+Welcome to the official repository for the **NARMAHI Agency** company website. This project contains the source code for our online presence, showcasing our services, portfolio, and company information.
+
+## 🚀 Tech Stack
+
+- **Framework:** React + Vite
+- **Styling:** Vanilla CSS (Targeting modern aesthetics)
+- **Deployment:** Netlify 
+
+## 🛠️ Running Locally
+
+To run the application locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/NARMAHI/NARMAHI.git
+   ```
+
+2. **Navigate to the directory:**
+   ```bash
+   cd NARMAHI
+   ```
+
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## 🌐 Deployment
+
+The site is configured to deploy via Netlify. All pushes to the `main` branch are automatically built and deployed using the configuration in `netlify.toml`.
