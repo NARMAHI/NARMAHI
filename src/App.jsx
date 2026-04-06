@@ -6,8 +6,10 @@ import {
   X, PhoneCall, Mail, Send, User, Briefcase, MessageSquare, MessageCircle, Phone,
   Check, ShieldCheck, Shield, Target, Eye, Calendar, DollarSign, Search, Map, MapPin, PenTool, Rocket, TrendingUp, Quote, Sparkles, Play
 } from "lucide-react";
-import divinePanditImg from "./assets/images/divine-pandit.png";
+import divinePanditImg from "./assets/images/divine-pandit-2.png";
 import careerPathAiImg from "./assets/images/careerpath-ai.png";
+import localRankImg from "./assets/images/local-rank.png";
+import ecommerceImg from "./assets/images/ecommerce.png";
 
 /* =========================================
    0. PREMIUM ANIMATION & COLORS
@@ -701,8 +703,8 @@ const Portfolio = () => {
     { title: "Divine Pandit", category: "Native Mobile App", desc: "A robust Native Android/iOS application with complex authentication, real-time chat, and seamless payments.", fullDesc: "We engineered a reliable, real-time matching algorithm to connect users with spiritual guides across the globe. The native mobile application features highly complex authentication flows, secure real-time encrypted chat, and an integrated multi-currency payment gateway.", techStack: ["React Native", "Firebase", "Stripe API", "WebSockets"], image: divinePanditImg },
     { title: "Atmaram Jewellers", category: "E-Commerce App", desc: "Premium jewelry retail application built for high-conversion and scale.", fullDesc: "A high-end heritage jewelry brand needed a digital storefront that reflected their physical luxury. We built a pixel-perfect, lightning-fast e-commerce mobile application featuring AR try-ons, high-resolution media handling, and an ultra-secure checkout process.", techStack: ["Next.js", "Shopify Plus API", "Framer Motion", "Vercel"], image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop" },
     { title: "Career Path AI", category: "AI Platform", desc: "Intelligent platform mapping customized career trajectories.", fullDesc: "An AI-driven educational platform that analyzes thousands of data points to generate custom career trajectories for students. We integrated advanced LLMs to create a conversational interface that acts as a 24/7 personal career counselor.", techStack: ["OpenAI GPT-4", "Python", "React", "PostgreSQL"], image: careerPathAiImg },
-    { title: "Local Rank", category: "Support Portal", desc: "Dynamic local business listing and support portal.", fullDesc: "A highly dynamic, SEO-optimized business directory designed to handle millions of local search queries. The platform includes a robust vendor dashboard, automated review fetching, and a complex localized search algorithm.", techStack: ["Next.js (SSR)", "ElasticSearch", "Node.js", "Tailwind"], image: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=800&auto=format&fit=crop" },
-    { title: "E-Commerce Web", category: "Web Store", desc: "Lightning-fast, high-conversion online store built to scale.", fullDesc: "We developed a bespoke headless e-commerce solution for a rapidly scaling D2C brand. By decoupling the frontend from the backend, we achieved sub-second page load speeds, drastically reducing cart abandonment and boosting organic traffic.", techStack: ["React", "Shopify Storefront API", "GraphQL", "Redis"], image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop" },
+    { title: "Local Rank", category: "Support Portal", desc: "Dynamic local business listing and support portal.", fullDesc: "A highly dynamic, SEO-optimized business directory designed to handle millions of local search queries. The platform includes a robust vendor dashboard, automated review fetching, and a complex localized search algorithm.", techStack: ["Next.js (SSR)", "ElasticSearch", "Node.js", "Tailwind"], image: localRankImg },
+    { title: "E-Commerce Web", category: "Web Store", desc: "Lightning-fast, high-conversion online store built to scale.", fullDesc: "We developed a bespoke headless e-commerce solution for a rapidly scaling D2C brand. By decoupling the frontend from the backend, we achieved sub-second page load speeds, drastically reducing cart abandonment and boosting organic traffic.", techStack: ["React", "Shopify Storefront API", "GraphQL", "Redis"], image: ecommerceImg },
   ];
 
   return (
